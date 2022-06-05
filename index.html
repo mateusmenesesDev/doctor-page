@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=0"/>
+    <title>Flexbox Site</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="media.css">
+    <script type="text/javascript">
+      window.onload = function(){
+        document.querySelector(".menuMobile").addEventListener("click", function(){
+          if(document.querySelector(".menu nav ul").style.display == 'flex'){
+            document.querySelector(".menu nav ul").style.display = 'none';
+          } else {
+            document.querySelector(".menu nav ul").style.display = 'flex';
+          }
+        })
+      };
+    </script>
+
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="">
+            <img src="assets/images/logo.png" alt="" />
+          </a>
+        </div>
+        <div class="menu">
+          <nav>
+            <div class="menuMobile">
+              <div class="mm_line"></div>
+              <div class="mm_line"></div>
+              <div class="mm_line"></div>
+            </div>
+            <ul>
+              <li class="active"><a href="">HOME</a></li>
+              <li><a href="">BLOG</a></li>
+              <li><a href="">PAGES</a></li>
+              <li><a href="">DEPARTMENTS</a></li>
+              <li><a href="">TIMETABLE</a></li>
+              <li><a href="">GALLERY</a></li>
+              <li><a href="">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section id="banner">
+      <div class="container column">
+        <div class="banner_headline">
+          <h1>Top notch experience</h1>
+          <h2>
+            Medicenter is a responsive template perfect for all scren sizes
+          </h2>
+        </div>
+        <div class="banner_options">
+          <div class="banner1">
+            <div class="banner_title">Emergency Case</div>
+            <div class="banner_desc">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
+              accusantium quis, hic quibusdam accusamus perspiciatis eveniet
+              rerum earum beatae quod?
+            </div>
+            <a href="">Read More</a>
+          </div>
+          <div class="banner2">
+            <div class="banner_title">Doctors Timetable</div>
+            <div class="banner_desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus
+              eligendi minima ratione debitis dignissimos deserunt, sequi nulla
+              necessitatibus asperiores vero, tempore fugiat sed facere autem
+              magnam praesentium! Nam, ut odio.
+            </div>
+            <a href="">Read More</a>
+          </div>
+          <div class="banner3">
+            <div class="banner_title">Opening Hours</div>
+            <div class="banner_desc">
+              <div class="day1">
+                <div class="day">Monday - Friday</div>
+                <div class="hour">8.00 - 17.00</div>
+              </div>
+              <div class="day2">
+                <div class="day">Saturday</div>
+                <div class="hour">9.30 - 17.30</div>
+              </div>
+              <div class="day3">
+                <div class="day">Sunday</div>
+                <div class="hour">9.30 - 15.00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="conteudo">
+      <div class="container">
+        <section>
+          <div class="widget">
+            <div class="widget_title">
+              <div class="widget_title_text">Latest News</div>
+              <div class="widget_title_bar"></div>
+            </div>
+            <div class="widget_body flex">
+              <article>
+                <a href="">
+                  <div class="news_data">
+                    <div class="news_posted_at">01 JAN 22</div>
+                    <div class="news_comments">2</div>
+                  </div>
+                  <div class="news_thumbnail">
+                    <img src="assets/images/dr.jpg" alt="" />
+                  </div>
+                  <div class="news_title">Lorem ipsum dolor sit amat value</div>
+                  <div class="news_resume">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Ipsa nam sequi veritatis voluptatum iste, quo aliquam eius
+                    molestiae sit ducimus non beatae adipisci aperiam modi nobis
+                    quaerat nesciunt magnam quisquam libero quasi corrupti
+                    laboriosam assumenda obcaecati? Natus magni nulla
+                    repellendus quam ducimus officiis eos libero fuga vel?
+                    Labore, vero? Nulla! Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Soluta architecto aliquid quo possimus
+                    optio nulla itaque, quibusdam quis asperiores autem?
+                  </div>
+                </a>
+              </article>
+              <article>
+                <a href="">
+                  <div class="news_data">
+                    <div class="news_posted_at">01 JAN 22</div>
+                    <div class="news_comments">2</div>
+                  </div>
+                  <div class="news_thumbnail">
+                    <img src="assets/images/dr1.jpg" alt="" />
+                  </div>
+                  <div class="news_title">Lorem ipsum dolor sit amat value</div>
+                  <div class="news_resume">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Ipsa nam sequi veritatis voluptatum iste, quo aliquam eius
+                    molestiae sit ducimus non beatae adipisci aperiam modi nobis
+                    quaerat nesciunt magnam quisquam libero quasi corrupti
+                    laboriosam assumenda obcaecati? Natus magni nulla
+                    repellendus quam ducimus officiis eos libero fuga vel?
+                    Labore, vero? Nulla!
+                  </div>
+                </a>
+              </article>
+              <article>
+                <a href="">
+                  <div class="news_data">
+                    <div class="news_posted_at">01 JAN 22</div>
+                    <div class="news_comments">2</div>
+                  </div>
+                  <div class="news_thumbnail">
+                    <img src="assets/images/dr1.jpg" alt="" />
+                  </div>
+                  <div class="news_title">Lorem ipsum dolor sit amat value</div>
+                  <div class="news_resume">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Ipsa nam sequi veritatis voluptatum iste, quo aliquam eius
+                    molestiae sit ducimus non beatae adipisci aperiam modi nobis
+                    quaerat nesciunt magnam quisquam libero quasi corrupti
+                    laboriosam assumenda obcaecati? Natus magni nulla
+                    repellendus quam ducimus officiis eos libero fuga vel?
+                    Labore, vero? Nulla!
+                  </div>
+                </a>
+              </article>
+              <article>
+                <a href="">
+                  <div class="news_data">
+                    <div class="news_posted_at">01 JAN 22</div>
+                    <div class="news_comments">2</div>
+                  </div>
+                  <div class="news_thumbnail">
+                    <img src="assets/images/dr.jpg" alt="" />
+                  </div>
+                  <div class="news_title">Lorem ipsum dolor sit amat value</div>
+                  <div class="news_resume">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Ipsa nam sequi veritatis voluptatum iste, quo aliquam eius
+                    molestiae sit ducimus non beatae adipisci aperiam modi nobis
+                    quaerat nesciunt magnam quisquam libero quasi corrupti
+                    laboriosam assumenda obcaecati? Natus magni nulla
+                    repellendus quam ducimus officiis eos libero fuga vel?
+                    Labore, vero? Nulla!
+                  </div>
+                </a>
+              </article>
+            </div>
+          </div>
+        </section>
+        <aside>
+          <div class="widget">
+            <div class="widget_title">
+              <div class="widget_title_text">Departments</div>
+              <div class="widget_title_bar"></div>
+            </div>
+            <div class="widget_body">
+              <div class="department_box"></div>
+              <div class="department_box"></div>
+              <div class="department_box"></div>
+              <div class="department_box"></div>
+              <div class="department_box"></div>
+              <div class="department_box"></div>
+            </div>
+          </div>
+          <div class="widget">
+            <div class="widget_title">
+              <div class="widget_title_text">Make An Appointment</div>
+              <div class="widget_title_bar"></div>
+            </div>
+            <div class="widget_body">
+              <div class="appointment_details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
+                quam?
+              </div>
+              <div class="appointment_box_details">
+                <div class="appointment_box">
+                  <div class="appointment_icon">teste</div>
+                  <div class="appointment_text">by phone: ****-****</div>
+                </div>
+                <div class="appointment_box">
+                  <div class="appointment_icon">teste</div>
+                  <div class="appointment_text">
+                    by e-mail: <a href="">*****@gmail.co</a> m
+                  </div>
+                </div>
+                <div class="appointment_box">
+                  <div class="appointment_icon">teste</div>
+                  <div class="appointment_text">
+                    or <a href="">fill in the form</a> on our contact page
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+    
+    <footer>
+
+      <div class="container column">
+        <div class="footer_menu">
+          <div class="fm_1">Health Insurance
+            <p>Here in medicenter we have individual ></p>
+          </div>
+          <div class="fm_2">Medical Records
+            <p>Here in medicenter we have individual ></p>
+          </div>
+          <div class="fm_3">
+            Online Bill Pay 
+            <p>Here in medicenter we have individual ></p>
+          </div>
+        </div>
+        <div class="footer_area">
+          <div class="footer_areaitem">
+            <div class="widget">
+              <div class="widget_title">
+                <div class="widget_title_text">Medicenter Clinic</div>
+                <div class="widget_title_bar"></div>
+              </div>
+              <div class="widget_body">
+                <div class="widget_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, odit.</div>
+                <div class="footer_contact">
+                  <div class="footer_contact_desc">
+                    <address>
+                      <p>Medicenter Clinic</p>
+                      <p>33 Farlane Street</p>
+                      <p>Keilor East</p>
+                      <p>VIC 3033, Australia</p>                      
+                    </address>
+                    
+                  </div>
+                  <div class="footer_contact_addres">
+                    <address>
+                      <div class="footer_number">
+                        <p>+123 655 655</p>
+                        <p>+123 755 755</p>
+                        <p>medicenter@mail.com</p>                        
+                      </div>
+
+                    </address>
+                  </div>
+                </div>
+                <div class="footer_social">
+                  <div class="footer_social_icons">
+                    <div class="social_icon1">1</div>
+                    <div class="social_icon2">2</div>
+                    <div class="social_icon3">3</div>
+                    <div class="social_icon4">4</div>
+                  </div>
+                  <div class="footer_vazio"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer_areaitem">
+            <div class="widget">
+              <div class="widget_title">
+                <div class="widget_title_text">Latest Posts</div>
+                <div class="widget_title_bar"></div>
+              </div>
+              <div class="widget_body">
+                medicenter@mail.com
+              </div>
+            </div>
+          </div>
+          <div class="footer_areaitem">
+            <div class="widget">
+              <div class="widget_title">
+                <div class="widget_title_text">Latests Tweets</div>
+                <div class="widget_title_bar"></div>
+              </div>
+              <div class="widget_body">
+                ...
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_copy">
+          Copyright <a href="">MediCenter Template</a> by <a href="">QuanticaLabs</a>
+        </div>
+      </div>
+
+      
+    </footer>
+  </body>
+</html>
